@@ -26,10 +26,6 @@ padding-left: 12px;
 padding-right: 2px;
 }
 
-.video-card {
-    display: inline-block;
-    vertical-align: top;
-}
 
 .video-preview {
     display: inline-block;
@@ -53,14 +49,15 @@ padding-right: 2px;
 
 .video-info {
     display: inline-block;
-    width: 200px;
+    width: 240px;
 
 }
 
 .video-title {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 15px;
+    line-height: 20px;
 }
 
 .video-author,
@@ -72,20 +69,14 @@ padding-right: 2px;
 
 .channel-picture {
     display: inline-block;
-    width: 300px;
- 
+    vertical-align: top;
+    margin-right: 10px;
+    width: 40px;
 }
 
 .profile-picture { 
     display: inline-block;
     border-radius: 50px;
-    paddi
-
+    width: 100%;
 }
 
-
-
-.channel-profile-pic {
-    display: inline-block;
-
-}
