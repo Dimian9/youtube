@@ -1,6 +1,5 @@
 
-p {
-    font-family: Roboto, Arial; 
+p { 
     font-weight: 500;
     margin: 0;
     padding: 0;
@@ -13,6 +12,7 @@ body {
     padding-left: 95px;
     padding-right: 24px;
     background-color: rgb(247, 247, 247);
+    font-family: 'Roboto', Arial;
 }
 
 img {
@@ -20,9 +20,8 @@ img {
 
 }
 
-
-.video-preview {
-
+a {
+    text-decoration: none;
 }
 
 .thumbnail-container {
@@ -32,7 +31,6 @@ img {
 
 .thumbnail {
     width: 100%;
-    margin-bottom: 10px;
 }
 
 .thumbnail-row {
@@ -40,8 +38,22 @@ img {
     position: relative;
 }
 
-.video-time {
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
     font-family: Roboto, Arial;
+
+}
+
+@media (max-width: 750px) {
+    .video-grid {
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+.video-time {
     font-size: 12px;
     position: absolute;
     background-color: black;
@@ -65,6 +77,7 @@ img {
     font-size: 15px;
     margin-bottom: 10px;
     line-height: 20px;
+    color: black;
 }
 
 .video-author,
@@ -80,14 +93,6 @@ img {
     width: 40px;
 }
 
-.video-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 16px;
-    row-gap: 40px;
-
-
-}
 
 .header {
     display: flex;
@@ -203,6 +208,7 @@ img {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 2px;
+    font-family: Roboto, Arial;
     font-size: 12px;
     bottom: -45px;
     opacity: 0;
@@ -218,14 +224,12 @@ img {
 .notifications-icon-container:hover .tooltip {
     opacity: 1;
 
-
 }
 
 .voice-search-icon {
     height: 25px;
     width: 25px;
     
-
 }
 
 .voice-search-button {
@@ -234,7 +238,6 @@ img {
     border-radius: 20px;
     border: none;
     background-color: rgb(248, 248, 248);
-
 
 }
 
@@ -245,7 +248,6 @@ img {
 .youtube-apps-icon {
     height: 25px;
     
-
 }
 
 .notifications-icon {
@@ -282,7 +284,6 @@ img {
     align-items: center;
     height: 73px;
     width: 74px;
-    font-family: Roboto, Arial;
     font-size: 10px;
     padding-top: 4px;
     cursor: pointer;
@@ -316,7 +317,6 @@ img {
     top: -3px;
     background-color: rgb(204, 0, 0);
     color: white;
-    font-family: 'Roboto', Arial;
     font-size: 11px;
     padding-top: 2px;
     padding-bottom: 2px;
